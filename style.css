@@ -17,15 +17,16 @@ html, body {
 
 .main-section { 
     display: flex;
+    justify-content: space-between;
 }
 
 .header { 
     display: flex;
     background-color: rgb(0,0,0,0.3);
     align-items: center;
-    padding-right: 100px;
-    padding-left: 100px;
-    margin-top: 110px;
+    padding-right: 130px;
+    padding-left: 130px;
+    margin-top: 160px;
     flex-shrink: 0;
     
 }
@@ -50,4 +51,92 @@ html, body {
 .header img { 
     height: auto;
     width: 100px;
+}
+
+/* start of the sign up section */
+.sign-up-section { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 0;
+    margin-top:0;
+}
+
+
+
+.white-background { 
+    background-color:antiquewhite;
+    height: 75%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+.dummy-text { 
+    font-size: 32px;
+    text-align: left;
+    padding-left: 30px ;
+}
+
+.form-title { 
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.lets {
+    font-size:30px;
+    font-weight: bold;
+}
+.actual-form { 
+    display: flex;
+    color: rgb(177, 177, 177);
+    font-size: 20px;
+    gap: 84px;
+}
+
+
+input { 
+    padding: 10px;
+    border-radius: 16px;
+    border:2px solid gray;
+}
+
+input:focus {
+    border: 3px solid rgb(0, 162, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+input#password:invalid { 
+    border: 3px solid rgb(255, 0, 0);
+}
+
+.third-part { 
+    flex-shrink: 0;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 43px;
+}
+
+button { 
+    background-color: rgb(158, 120, 49);
+    color: white;
+    font-size: 25px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border:none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+a { 
+    text-decoration: none;
+    color: rgb(158, 120, 49);
+
 }
